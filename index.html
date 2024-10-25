@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Página Web Mejorada</title>
+    <style>
+    
+        /* Estilos Globales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            padding: 50px;
+            text-align: center;
+            color: white;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .logo a {
+            font-weight: 600;
+            font-size: 24px;
+            color: #fff;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #00bcd4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #008c9e;
+        }
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .box {
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .box i {
+            font-size: 50px;
+            color: #333;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #00f2fe;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        figure img {
+            border-radius: 10px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .box {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="content header">
+        <h1>Daniel gomez </h1>
+        <p>Tu sitio para encontrar productos increíbles y más</p>
+        <a href="#" class="btn">Saber más</a>
+        <a href="#" class="btn">Contáctanos</a>
+    </header>
+
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <a href="#">Inicio</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Productos</a>
+        <a href="#">Precio</a>
+        <a href="#">Contacto</a>
+    </div>
+
+    <!-- Sección de Productos -->
+    <section class="content sau">
+        <h2 class="title">Nuestros Productos</h2>
+        <p>Explora nuestra selección de productos diseñados para ti.</p>
+        <div class="box-container">
+            <div class="box">
+                <i class="fab fa-angular"></i>
+                <h3>Angular Framework</h3>
+                <p>Descubre la potencia del desarrollo con Angular.</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                <h3>Dispositivos Apple</h3>
+                <p>Encuentra lo último en innovación tecnológica.</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-android"></i>
+                <h3>Aplicaciones Android</h3>
+                <p>Explora nuestras apps y servicios móviles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section class="content about">
+        <h2 class="title">Sobre Nosotros</h2>
+        <p>Somos una empresa dedicada a ofrecer soluciones innovadoras para nuestros clientes. Con años de experiencia en el mercado, garantizamos calidad y satisfacción.</p>
+        <a href="#" class="btn">Saber más</a>
+    </section>
+
+    <!-- Sección Precios -->
+    <section class="content price">
+        <article class="contain">
+            <h2 class="title">Nuestros Precios</h2>
+            <p>Ofrecemos precios competitivos sin comprometer la calidad.</p>
+            <a href="#" class="btn">Ver Precios</a>
+        </article>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="content contact">
+        <h2 class="title">Contáctanos</h2>
+        <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
+        <p>Teléfono: 48481548</p>
+        <figure class="map">
+            <img src="imagenes/mapa.png" height="220px" width="100%" alt="Mapa de ubicación">
+        </figure>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section class="content">
+        <h2 class="title">Testimonios</h2>
+        
+        <p>Escucha lo que nuestros clientes dicen de nosotros.</p>
+        <blockquote>
+            "Esta página me cambió la vida. Excelente servicio y productos de alta calidad." 
+        </blockquote>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Mi pagina Web. </p>
+        <p>Síguenos en 
+            <a href="#">Facebook</a>, 
+            <a href="#">Twitter</a> y 
+            <a href="#">Instagram</a>.
+        </p>
+    </div>
+
+</body>
+</html>
